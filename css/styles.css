@@ -20,7 +20,8 @@
     position: fixed;
     display: flex;
     justify-content: space-between;
-    background-color: #705d97b0;
+    background-color: rgba(189, 189, 189, 0.926);
+    /* #705d97b0 */
     width: 98%;
     margin-left:1%;
     height: 100px;
@@ -32,13 +33,16 @@
 }
 .fullpage{
     width: 100%;
-    height: 400px;
+    height: 70vh;
     background: #DEDEDE;
-    background: linear-gradient(0deg, #DEDEDE 0%, rgba(71,35,96,1) 100%);
+    /* background: linear-gradient(0deg, #DEDEDE 0%, black); */
     text-align: center;
-    padding-top: 90px;
+    background-image: url("../images/main.jpg");
+    background-size: cover;
+    padding-top: 250px;
     font-family: 'permanent marker';
     /* font-size: xx-large; */
+    /* rgba(71,35,96,1) 100% */
 }
 .cc{
     height: 500px;
@@ -50,12 +54,13 @@
     text-decoration: none;
     line-height: 3;
     font-size: xx-large;
-    color:black
+    color:rgb(0, 0, 0)
 }
 .main{
     width: 100%;
     height: 125px;
-    background-color: #472360;
+    background-color: black;
+    /* #472360 */
     /* border:0.1px solid; */
     box-shadow: 10px 10px 5px #aaaaaa;
 }
@@ -73,7 +78,7 @@
 .content{
     width: 100%;
     height: 500px;
-    background-color: #DEDEDE;
+    background-color: rgba(209,210,212,255);
 }
 .dd{
     display: inline-block;
@@ -184,12 +189,14 @@ background-color: #ddd;
 }
 .productshead{
     width: 99.2%;
-    height: 50px;
+    height: 120px;
     margin: auto;
     display: flex;
     padding: 5px;
     justify-content: center;
-    background-color: #DEDEDE;
+    background-color: rgba(209,210,212,255);
+    /* align-self: center; */
+    line-height: 3;
 }
 img{
     margin:auto;
