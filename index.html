@@ -1,95 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>home</title>
     <style>
-        body
-        {
-            background-image: url("web.jpg");
-        }
-        
         *{
             margin: 0;
             padding: 0;
         }
-       
-        .list ul li{
+        .list ul li {
             display: inline-block;
             justify-content: center;
             padding: 10px;
             /* line-height: 4; */
             padding-top: 41.2px;
         }
-        .list>ul{
+
+        .list>ul {
             padding-right: 40px;
         }
-        .navc{
+
+        .navc {
             position: fixed;
             display: flex;
             justify-content: space-between;
             background-color: #705d97b0;
             width: 98%;
-            margin-left:1%;
+            margin-left: 1%;
             height: 100px;
             margin-top: 12.5px;
             border-radius: 10px;
-            border:0.1px solid;
+            border: 0.1px solid;
             box-shadow: 10px 10px 15px #32243d;
             transition: top 0.5s;
         }
-        .fullpage{
+
+        .fullpage {
             width: 100%;
             height: 400px;
             background: #DEDEDE;
-            background: linear-gradient(0deg, #DEDEDE 0%, rgba(71,35,96,1) 100%);
+            background: linear-gradient(0deg, #DEDEDE 0%, rgba(71, 35, 96, 1) 100%);
             text-align: center;
             padding-top: 90px;
 
         }
-        .cc{
+
+        .cc {
             height: 500px;
             /* background-color: antiquewhite; */
         }
-        .brand{
+
+        .brand {
             padding-left: 40px;
             display: inline-block;
             text-decoration: none;
             line-height: 3;
             font-size: xx-large;
-            color:black
+            color: black
         }
-        .main{
+
+        .main {
             width: 100%;
             height: 125px;
             background-color: #472360;
             /* border:0.1px solid; */
             box-shadow: 10px 10px 5px #aaaaaa;
         }
-        .list>ul>li>a{
+
+        .list>ul>li>a {
             text-decoration: none;
-            color :black
+            color: black
         }
-        .list ul li a:hover{
-            color:#F5F5F5;
+
+        .list ul li a:hover {
+            color: #F5F5F5;
         }
-        .brand:hover{
-            color:#F5F5F5
+
+        .brand:hover {
+            color: #F5F5F5
         }
-        .content{
+
+        .content {
             width: 100%;
             height: 500px;
             background-color: #DEDEDE;
         }
-        .dd{
+
+        .dd {
             display: inline-block;
             /* float: left; */
             overflow: hidden;
         }
-        .dd .ddbtn{
-            font-size: 16px;  
+
+        .dd .ddbtn {
+            font-size: 16px;
             border: none;
             outline: none;
             color: black;
@@ -98,16 +105,17 @@
             font-family: inherit;
             margin: 0;
         }
+
         .ddc {
             display: none;
             margin-top: 15px;
             position: absolute;
             background-color: #f9f9f9;
             min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
             z-index: 1;
             border-radius: 20px;
-        }   
+        }
 
         .ddc a {
             float: none;
@@ -119,48 +127,58 @@
         }
 
         .ddc a:hover {
-        background-color: #ddd;
+            background-color: #ddd;
         }
 
         .dd:hover .ddc {
             display: block;
         }
-        .ddbtn{
+
+        .ddbtn {
             text-decoration: none;
         }
-        .dd a{
+
+        .dd a {
             text-decoration: none;
             color: black;
         }
-        .ddc a{
+
+        .ddc a {
             color: black;
         }
-        .footer{
+
+        .footer {
             width: 100%;
             height: 96px;
             background-color: #705d97b0;
             margin-bottom: 0;
             text-align: center;
         }
-        .content{
+
+        .content {
             display: flex;
             justify-content: center;
         }
-        .fc{
+
+        .fc {
             line-height: 6;
-            color:#472360;
+            color: #472360;
         }
     </style>
 </head>
+
 <body>
-    
-        <nav class="main">
-            <div class="navc" id="navc">
-                <a href="#" class="brand">ClassFriend</a>
-                <div class="list">
-                    <ul>
-                        <li><div  class="dd"><a href="#">about</a></div></li>
-                        <li><div class="dd">
+
+    <nav class="main">
+        <div class="navc" id="navc">
+            <a href="#" class="brand">ClassFriend</a>
+            <div class="list">
+                <ul>
+                    <li>
+                        <div class="dd"><a href="#">about</a></div>
+                    </li>
+                    <li>
+                        <div class="dd">
                             <a href="#" class="ddbtn">Products</a>
 
                             <div class="ddc">
@@ -168,37 +186,41 @@
                                 <a href="#">notebook</a>
                                 <a href="#">crayones</a>
                             </div>
-                        </div></li>
-                        <li><div class="dd"><a href="#">Contact</a></div></li>
-                    </ul>
-                </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dd"><a href="#">Contact</a></div>
+                    </li>
+                </ul>
             </div>
-        </nav>
-        <script>
-            let prevscrollpos = window.pageYOffset;
-            window.onscroll = function(){
-                let currscrolpos = window.pageYOffset;
-                if(prevscrollpos > currscrolpos){
-                    document.getElementById('navc').style.top = "0";
-                }else{
-                    document.getElementById('navc').style.top = "-125px";
-                }
-                prevscrollpos = currscrolpos
-            }
-        </script>
-        <div class="fullpage">
-            <h1>ClassFriend</h1>
-            <p>-true friend of student</p>
         </div>
-        <hr>
-        <div class="content">
-            <h1 class="cc">content</h1>
-        </div>        
-    
+    </nav>
+    <script>
+        let prevscrollpos = window.pageYOffset;
+        window.onscroll = function () {
+            let currscrolpos = window.pageYOffset;
+            if (prevscrollpos > currscrolpos) {
+                document.getElementById('navc').style.top = "0";
+            } else {
+                document.getElementById('navc').style.top = "-125px";
+            }
+            prevscrollpos = currscrolpos
+        }
+    </script>
+    <div class="fullpage">
+        <h1>ClassFriend</h1>
+        <p>-true friend of student</p>
+    </div>
+    <hr>
+    <div class="content">
+        <h1 class="cc">content</h1>
+    </div>
+
 
 
     <footer class="footer">
         <p class="fc">@ClassFriend copyright-2023</p>
     </footer>
 </body>
+
 </html>
