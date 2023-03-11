@@ -1,19 +1,131 @@
 <html>
-    <head>
-        
-    </head>
-    <body>
-        <div id="login-error-msg-holder">
-            <p id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password</span></p>
+
+<head>
+  <link rel="stylesheet" href="css/style_login.css">
+  <style>
+    table,
+    th,
+    td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      padding: 10px;
+      border-spacing: 1px;
+      margin-left: auto;
+      margin-right: auto;
+      width: auto;
+      height: 40%;
+      background-color: #ece4e4;
+    }
+
+    body {
+      text-align: center;
+    }
+  </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Marck+Script&family=Merienda&family=Permanent+Marker&display=swap"
+    rel="stylesheet">
+  <title>home</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <!-- <nav class="main"> -->
+  <div class="navc" id="navc">
+    <a href="#" class="brand">Teammate</a>
+    <div class="list">
+      <ul>
+        <li><div class="dd"><a href="index.html">Home</a></div></li>
+        <li>
+          <div class="dd"><a href="#">About</a></div>
+        </li>
+        <li>
+          <div class="dd">
+            <a href="#" class="ddbtn">Products</a>
+
+            <div class="ddc">
+              <a href="#">Pencil</a>
+              <a href="#">notebook</a>
+              <a href="#">Crayons</a>
+            </div>
           </div>
-          
-          <form id="login-form">
-            <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username"><br>
-            <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
-            <input type="submit" value="Login" id="login-form-submit">
-          </form>
-          <script>
-            
-          </script>
-    </body>
+        </li>
+        <li><div class="dd"><a href="login_page.html">Login</a></div></li>
+        <li>
+          <div class="dd"><a href="#">Contact</a></div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- </nav> -->
+  <script>
+    let prevscrollpos = window.pageYOffset;
+    window.onscroll = function () {
+      let currscrolpos = window.pageYOffset;
+      if (prevscrollpos > currscrolpos) {
+        document.getElementById('navc').style.top = "0";
+      } else {
+        document.getElementById('navc').style.top = "-125px";
+      }
+      prevscrollpos = currscrolpos
+    }
+  </script>
+  <div class="fullpage">
+    <h1 style="font-size:60px;">Teammate</h1>
+    <p style>-true friend of student</p>
+    <table>
+      <form>
+        <tr>
+          <td>Enter Username</td>
+          <td><input type="text" name="username" id="username-field" placeholder="Username"></td>
+        </tr>
+        <tr>
+          <td>Enter password</td>
+          <td><input type="password" name="password" id="password-field" placeholder="Password"></td>
+        </tr>
+
+      </form>
+
+    </table>
+    <input type="button" value="Sign up" id="login-form-signup">
+    <input type="button" value="Login" id="login-form-login">
+
+
+  </div>
+
+  <div class="productshead">
+    <h1>Products</h1>
+  </div>
+
+  <div class="content">
+
+    <div class="pro1">
+      <h3 class="p3">Crayons</h3>
+    </div>
+
+    <div class="pro2">
+      <h3 class="p3">Notebook</h3>
+    </div>
+    <div class="pro3">
+      <h3 class="p3">Pencils</h3>
+    </div>
+  </div>
+
+
+
+  <footer class="footer">
+    <p class="fc">@ClassFriend copyright-2023</p>
+  </footer>
+
+
+
+  <script>
+
+  </script>
+</body>
+
 </html>
