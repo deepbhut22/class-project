@@ -180,21 +180,13 @@
         }
 
         .footer {
-            width: 100%;
-            height: 96px;
-            background-color: #705d97b0;
-            margin-bottom: 0;
+            position: fixed;
             text-align: center;
-        }
-
-        .content {
-            display: flex;
-            justify-content: space-around;
-        }
-
-        .fc {
-            line-height: 6;
-            color: #472360;
+            bottom: 0;
+            width: 100%;
+            height: 60px;
+            /* Height of the footer */
+            background: #705d97b0
         }
 
         .dd:hover {
@@ -203,71 +195,13 @@
             color: white;
         }
 
-        .pro1 {
-            width: 30%;
-            height: 90%;
-            background-color: #ece4e4;
-            margin-top: 90px;
-            margin: 0 auto;
-            border-radius: 30px;
-            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
-            display: block;
-            justify-content: center;
-            background-image: url(../images/c.jpg);
-            background-size: cover;
-        }
-
-        .pro2 {
-            width: 30%;
-            height: 90%;
-            background-color: #ece4e4;
-            margin-top: 90px;
-            margin: 0 auto;
-            border-radius: 30px;
-            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
-            display: block;
-            background-image: url(../images/n.jpg);
-
-            justify-content: center;
-            background-size: cover;
-        }
-
-        .pro3 {
-            width: 30%;
-            height: 90%;
-            background-color: #ece4e4;
-            margin-top: 90px;
-            margin: 0 auto;
-            border-radius: 30px;
-            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
-            display: block;
-            justify-content: center;
-            background-image: url(../images/p.jpg);
-            background-size: cover;
-        }
-
-        .productshead {
-            width: 99.2%;
-            height: 120px;
-            margin: auto;
-            display: flex;
-            padding: 5px;
-            justify-content: center;
-            background-color: rgba(209, 210, 212, 255);
-            /* align-self: center; */
-            line-height: 3;
-        }
-
-        img {
-            margin: auto;
-            border-radius: 30px;
-            float: inherit;
-            border: 5px solid #DEDEDE
-        }
-
         .p3 {
             margin-top: 10px;
             margin-left: 15px;
+        }
+
+        .para:hover {
+            color: #32243d
         }
     </style>
 </head>
@@ -325,6 +259,7 @@ products at very reasonable price.
             </pre>
         </p>
     </div>
+
     <footer class="footer">
         <p class="fc">@ClassFriend copyright-2023</p>
     </footer>
