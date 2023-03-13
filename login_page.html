@@ -2,6 +2,7 @@
 
 <head>
   <link rel="stylesheet" href="css/style_login.css">
+  <script src="https://kit.fontawesome.com/125c8e5105.js" crossorigin="anonymous"></script>
   <style>
     table,
     th,
@@ -20,6 +21,12 @@
     body {
       text-align: center;
     }
+    .form td{
+      border-style: none;
+      border-bottom-style: solid;
+      outline:none;
+  
+  }
   </style>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -77,15 +84,16 @@
   <div class="fullpage">
     <h1 style="font-size:60px;">Teammate</h1>
     <p style>-true friend of student</p>
-    <table>
-      <form>
+    <table >
+      <form class="form">
         <tr>
           <td>Enter Username</td>
-          <td><input type="text" name="username" id="username-field" placeholder="Username"></td>
+          <td><input type="text" name="username" id="username-field" placeholder="Username"><i class="fa-solid fa-user"></i></td>
+          
         </tr>
         <tr>
           <td>Enter password</td>
-          <td><input type="password" name="password" id="password-field" placeholder="Password"></td>
+          <td><input type="password" name="password" id="password-field" placeholder="Password"><i class="fa-solid fa-lock"></i></td>
         </tr>
 
       </form>

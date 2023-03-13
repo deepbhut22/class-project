@@ -104,6 +104,7 @@
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     border-radius: 20px;
+    margin: 0 auto;
 }   
 
 .ddc a {
@@ -113,10 +114,12 @@
     text-decoration: none;
     display: block;
     text-align: left;
+    transition: 0.5s;
 }
 
 .ddc a:hover {
 background-color: #ddd;
+
 }
 
 .dd:hover .ddc {
@@ -140,12 +143,17 @@ background-color: #ddd;
     text-align: center;
 }
 .content{
-    display: flex;
+    display:flex;
     justify-content: space-around;
 }
 .fc{
     line-height: 6;
     color:#472360;
+}
+.dd:hover{
+    transition: 0.5s;
+    text-decoration: underline;
+    color:white;
 }
 .pro1{
     width: 30%;
